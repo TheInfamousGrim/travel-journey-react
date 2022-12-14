@@ -1,0 +1,99 @@
+:root {
+  --main-font-color: #2b283a;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+}
+
+a {
+  color: hsla(152, 100%, 50%, 1);
+  transition: all 0.5s;
+}
+
+a:hover,
+a:focus {
+  transform: translateY(-0.2rem);
+  color: hsla(186, 100%, 69%, 1);
+}
+
+/* --------------------------------- header --------------------------------- */
+.header {
+  background: hsla(152, 100%, 50%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__globe {
+  font-size: 2em;
+  color: var(--main-font-color);
+}
+
+.header__title {
+  color: var(--main-font-color);
+}
+
+/* ---------------------------------- main ---------------------------------- */
+
+.main {
+  margin: 5rem;
+}
+
+/* ---------------------------------- cards --------------------------------- */
+
+.travel-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.travel-card__img {
+  max-height: 300px;
+  border-radius: 5px;
+}
+
+.travel-card__location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.travel-card__location h4 {
+  margin: 0;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.travel-card__dates {
+  font-weight: 700;
+}
